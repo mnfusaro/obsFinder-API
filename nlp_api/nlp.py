@@ -1,6 +1,6 @@
 import spacy
 #es-core-news-sm-2.0.0
-from API.neural_model import obsenities_classification
+from nlp_api.neural_model import obsenities_classification
 
 def data_processor(text):
 

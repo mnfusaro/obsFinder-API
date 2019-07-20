@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
-from API.nlp import data_processor
+from nlp_api.nlp import data_processor
 
-app = Flask(__name__)
+from nlp_api import app
 
 """
 {"data" : "Si hablamos de una mujer, un hombre"}
@@ -19,9 +19,5 @@ def text_process():
 
 @app.route('/')
 def hello_world():
-
+    print("hello")
     return 'This is the Obscenities Finder API'
-
-
-if __name__ == '__main__':
-    app.run()
